@@ -1,7 +1,177 @@
 
-<body>
-    <h2>Crafty Organizer</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Library</title>
 
-    <p><a href="documents.html">Documents</a></p>
-    <p><a href="sorting-guide.html">Sorting Guide</a></p>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #ffffff;
+            color: #4A4A4A;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        /* Section Wrapper */
+        .section-box {
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            border: 1px solid #fcecc1;
+        }
+
+        /* Section Header */
+        .section-header {
+            background: #F7DDE2; /* Soft blush pink */
+            padding: 14px 20px;
+            border-radius: 10px;
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-bottom: 18px;
+            border: 1px solid #fcecc1; /* Butter yellow border */
+        }
+
+        /* Document Links */
+        .doc-list a {
+            display: block;
+            padding: 10px 14px;
+            margin: 6px 0;
+            background: #fcecc1; /* Butter yellow */
+            border-radius: 10px;
+            text-decoration: none;
+            color: #4A4A4A;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: 0.2s ease;
+        }
+
+        .doc-list a:hover {
+            background: #f9e4a8;
+        }
+
+        /* Scrapbook Central Cards */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .card {
+            background: #fff7fa;
+            border: 1px solid #f7dde2;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            font-weight: 600;
+            color: #4A4A4A;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.06);
+        }
+
+        .card:hover {
+            background: #fdeff3;
+        }
+
+        /* Buttons */
+        .button {
+            display: inline-block;
+            background: #fcecc1;
+            padding: 10px 18px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #4A4A4A;
+            font-weight: bold;
+            margin-top: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+        }
+
+        .button:hover {
+            background: #f9e4a8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 🌸 Welcome Section -->
+    <div class="section-box">
+        <div class="section-header">🌸 Welcome to My Creative Library</div>
+        <p>
+            A cozy, whimsical space for scrapbookers, organizers, and crafty souls.  
+            Explore documents, guides, inspiration, and creative tools — all in one warm, happy place.
+        </p>
+    </div>
+
+    <!-- 📄 Document Library -->
+    <div class="section-box">
+        <div class="section-header">📄 Document Library</div>
+
+        <div class="doc-list">
+            <a href="Sorting-kit.zip">⬇️ Sorting Kit (ZIP)</a>
+            <a href="Scrapbook-Supply-Sorting-Chart.pdf">📘 Sorting Chart</a>
+            <a href="Scrapbook-Supply-Label-Sheet.pdf">🏷️ Label Sheet</a>
+            <a href="Scrapbook-Sorting-Cards.pdf">🗂️ Sorting Cards</a>
+
+            <a href="pdfs/planner-pdf.html">📔 Planner</a>
+            <a href="pdfs/punch-outs-pdf.html">✂️ Punch-Outs</a>
+            <a href="pdfs/sketches-pdf.html">📝 Sketches</a>
+            <a href="pdfs/stickers-pdf.html">💖 Stickers</a>
+            <a href="pdfs/use-first-pdf.html">⭐ Use First</a>
+            <a href="pdfs/washi-pdf.html">🎀 Washi</a>
+            <a href="pdfs/sorting-guide-pdf.html">📚 Sorting Guide</a>
+        </div>
+    </div>
+
+    <!-- ✂️ Sorting Guide Section -->
+    <div class="section-box">
+        <div class="section-header">✂️ Sorting Guide</div>
+        <p>
+            Helpful tools and guides to organize your craft supplies, simplify your workflow,  
+            and make your creative time more joyful.
+        </p>
+
+        <div class="doc-list">
+            <a href="pdfs/sorting-guide-pdf.html">📚 Full Sorting Guide</a>
+            <a href="pdfs/use-first-pdf.html">⭐ Use First System</a>
+            <a href="pdfs/washi-pdf.html">🎀 Washi Organization</a>
+        </div>
+    </div>
+
+    <!-- 📚 Scrapbook Central -->
+    <div class="section-box">
+        <div class="section-header">📚 Scrapbook Central</div>
+        <p>Your cozy hub for inspiration, ideas, and creative fun.</p>
+
+        <!-- Photo Inspiration -->
+        <h3>📸 Photo Inspiration</h3>
+        <div class="card-grid">
+            <div class="card">Photo Spot 1</div>
+            <div class="card">Photo Spot 2</div>
+            <div class="card">Photo Spot 3</div>
+            <div class="card">Photo Spot 4</div>
+        </div>
+
+        <!-- Video Tutorials -->
+        <h3 style="margin-top: 25px;">🎥 Video Tutorials</h3>
+        <a class="button" href="#">Coming Soon</a>
+
+        <!-- Sketches -->
+        <h3 style="margin-top: 25px;">✂️ Sketches & Layout Ideas</h3>
+        <a class="button" href="pdfs/sketches-pdf.html">View Sketches</a>
+
+        <!-- Tips -->
+        <h3 style="margin-top: 25px;">💡 Tips & Tricks</h3>
+        <div class="card-grid">
+            <div class="card">Tip Spot 1</div>
+            <div class="card">Tip Spot 2</div>
+            <div class="card">Tip Spot 3</div>
+        </div>
+    </div>
+
 </body>
+</html>
